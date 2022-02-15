@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style type="text/css">
+    * {
+      margin: 0;
+      padding: 0;
+
+    }
+    .au{
+      display: flex;
+      min-height: 100vh;
+      background-image: url("306bbaadc18cbc03c8816c3906f28342.jpg");
+    }
+    .auu{
+      margin: auto;
+    }
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+  <script type="text/javascript">
+    window.onload = function (){
+      var  li = document.getElementsByTagName("li");
+      var  t = document.getElementById("au");
+      var img = document.getElementsByTagName("img");
+
+      for (let i=0;i<li.length;i++) {
+        li[i].onclick = function () {
+
+          let e = img[i].getAttribute("src");
+          t.style.backgroundImage = 'url(' + e + ')';
+
+        }
+      }
+      }
+  </script>
+
+
+</head>
+<div class="au"  id="au">
+
+  <div class="auu" >
+    <ul id="a">
+      <li> <img src="./306bbaadc18cbc03c8816c3906f28342.jpg" width="192" height="108"></li>
+      <li> <img src="./660a651c5b38ec0d0f805388cc37a990.jpg"  width="192" height="108"></li>
+      <li> <img src="./f483a5d7b0aebc9b0a1c7c96c80afce7.jpg"  width="192" height="108"></li>
+    </ul>
+  </div>
+
+</div>
+</body>
+
+</html>

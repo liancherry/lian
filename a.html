@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+        .au{
+            display: flex;
+            min-height: 100vh;
+            background-image: url("306bbaadc18cbc03c8816c3906f28342.jpg");
+        }
+        .auu{
+            margin: auto;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        /*.au{*/
+        /*    position: relative;*/
+        /*   height: 500px;*/
+        /*    background: pink;*/
+        /*}*/
+        /*.auu{*/
+        /*    position: absolute;*/
+        /*    top: 50%;*/
+        /*    left: 50%;*/
+        /*    transform: translate(-50%, -50%);*/
+        /*}*/
+    </style>
+    <script type="text/javascript">
+        window.onload = function (){
+            var  li = document.getElementsByTagName("li");
+            var  t = document.getElementById("au");
+            var img = document.getElementsByTagName("img");
+
+            for (let i=0;i<li.length;i++){
+                li[i].onclick=function (){
+
+                    // if (i==0){
+                    //     t.style.backgroundImage = "url(306bbaadc18cbc03c8816c3906f28342.jpg)";
+                    // }
+                    // if (i==1){
+                    //     t.style.backgroundImage = "url(660a651c5b38ec0d0f805388cc37a990.jpg)";
+                    // }
+                    // if (i==2){
+                    //     t.style.backgroundImage = "url(f483a5d7b0aebc9b0a1c7c96c80afce7.jpg)";
+                    // }
+                    let e = img[i];
+                    let ee = e.getAttribute("src");
+                    t.style.backgroundImage = 'url('+ee+')';
+                    console.log(li[i]);
+                    console.log(e);
+                    console.log(ee);
+                    console.log('url('+ee+')');
+
+                }
+
+            }
+
+        }
+    </script>
+
+
+</head>
+
+<!--<body background="f483a5d7b0aebc9b0a1c7c96c80afce7.jpg">-->
+
+<div class="au" id="au"  >
+
+    <div class="auu" >
+        <ul id="a">
+            <li> <img src="./306bbaadc18cbc03c8816c3906f28342.jpg" width="192" height="108"></li>
+            <li> <img src="./660a651c5b38ec0d0f805388cc37a990.jpg"  width="192" height="108"></li>
+            <li> <img src="./f483a5d7b0aebc9b0a1c7c96c80afce7.jpg"  width="192" height="108"></li>
+        </ul>
+    </div>
+
+</div>
+<!--<div>-->
+<!--    <div>-->
+<!--        <form>-->
+<!--            <input type="image" src="f483a5d7b0aebc9b0a1c7c96c80afce7.jpg" width="192" height="108" >-->
+<!--            <input type="image" src="660a651c5b38ec0d0f805388cc37a990.jpg" width="192" height="108">-->
+<!--            <input type="image" src="306bbaadc18cbc03c8816c3906f28342.jpg" width="192" height="108">-->
+<!--        </form>-->
+<!--    </div>-->
+<!--</div>-->
+</body>
+<!--<script type="text/javascript">-->
+<!--    var ul = document.getElementById("ai");-->
+<!--    val li = ul.-->
+<!--    var  t = document.getElementById("au");-->
+<!--    ul.onclick = function (){-->
+
+<!--        t.style.backgroundImage = "url(f483a5d7b0aebc9b0a1c7c96c80afce7.jpg)";-->
+<!--    }-->
+<!--</script>-->
+</html>
